@@ -7,12 +7,12 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/ed_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="text"
         android:hint="請輸入玩家姓名"
+        android:inputType="text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.144"
@@ -21,14 +21,14 @@
         app:layout_constraintVertical_bias="0.04" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tv_text"
         android:layout_width="168dp"
         android:layout_height="43dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="68dp"
         android:text="請輸入姓名已開始遊戲"
-        app:layout_constraintStart_toStartOf="@+id/editTextText"
-        app:layout_constraintTop_toTopOf="@+id/editTextText" />
+        app:layout_constraintStart_toStartOf="@id/ed_name"
+        app:layout_constraintTop_toTopOf="@id/ed_name" />
 
     <RadioGroup
         android:id="@+id/radioGroup"
@@ -36,24 +36,24 @@
         android:layout_height="64dp"
         android:layout_marginTop="120dp"
         android:orientation="horizontal"
-        app:layout_constraintStart_toStartOf="@+id/editTextText"
-        app:layout_constraintTop_toTopOf="@+id/editTextText">
+        app:layout_constraintStart_toStartOf="@id/ed_name"
+        app:layout_constraintTop_toTopOf="@id/ed_name">
 
         <RadioButton
-            android:id="@+id/radioButton"
+            android:id="@+id/btn_scissor"
             android:layout_width="138dp"
             android:layout_height="31dp"
             android:text="剪刀" />
 
         <RadioButton
-            android:id="@+id/radioButton5"
+            android:id="@+id/btn_stone"
             android:layout_width="119dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="石頭" />
 
         <RadioButton
-            android:id="@+id/radioButton6"
+            android:id="@+id/btn_paper"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -62,52 +62,52 @@
     </RadioGroup>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_mora"
         android:layout_width="194dp"
         android:layout_height="61dp"
         android:layout_marginTop="196dp"
         android:text="猜拳"
-        app:layout_constraintStart_toStartOf="@+id/editTextText"
-        app:layout_constraintTop_toTopOf="@+id/editTextText" />
+        app:layout_constraintStart_toStartOf="@id/ed_name"
+        app:layout_constraintTop_toTopOf="@id/ed_name" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/tv_name"
         android:layout_width="67dp"
         android:layout_height="20dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="272dp"
         android:text="名字"
-        app:layout_constraintStart_toStartOf="@+id/editTextText"
-        app:layout_constraintTop_toTopOf="@+id/editTextText" />
+        app:layout_constraintStart_toStartOf="@id/ed_name"
+        app:layout_constraintTop_toTopOf="@id/ed_name" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/tv_winner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="96dp"
         android:layout_marginTop="272dp"
         android:text="勝利者"
-        app:layout_constraintStart_toStartOf="@+id/editTextText"
-        app:layout_constraintTop_toTopOf="@+id/editTextText" />
+        app:layout_constraintStart_toStartOf="@id/ed_name"
+        app:layout_constraintTop_toTopOf="@id/ed_name" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/tv_mmora"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="168dp"
         android:layout_marginTop="272dp"
         android:text="我方出拳"
-        app:layout_constraintStart_toStartOf="@+id/editTextText"
-        app:layout_constraintTop_toTopOf="@+id/editTextText" />
+        app:layout_constraintStart_toStartOf="@id/ed_name"
+        app:layout_constraintTop_toTopOf="@id/ed_name" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/tv_comra"
         android:layout_width="157dp"
         android:layout_height="18dp"
         android:layout_marginStart="264dp"
         android:layout_marginTop="272dp"
         android:text="電腦出拳"
-        app:layout_constraintStart_toStartOf="@+id/editTextText"
-        app:layout_constraintTop_toTopOf="@+id/editTextText" />
+        app:layout_constraintStart_toStartOf="@id/ed_name"
+        app:layout_constraintTop_toTopOf="@id/ed_name" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
